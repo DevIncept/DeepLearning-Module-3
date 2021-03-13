@@ -12,7 +12,7 @@ The human brain has got 3 parts: cerebrum, which is all of these colored parts o
 →occipital lobe,\
 →parietal lobe.**
 
-![i1.png](attachment:i1.png)
+![i1.png](images/i1.png)
 
 **Temporal lobe and ann**
 
@@ -41,28 +41,28 @@ Now let’s move from neuroscience to our favorite neural networks.*
 
 *We begin with a transformation of a simple ANN showed below into RNN.*
 
-![i2.png](attachment:i2.png)
+![i2.png](images/i2.png)
 
 **This takes 5 steps:**\
 *Squashing the network. The layers are still there but think of it as if we’re looking from underneath this neural network*
 
-![i3.png](attachment:i3.png)
+![i3.png](images/i3.png)
 
 *Changing the multiple arrows into two.*
 
-![i4.png](attachment:i4.png)
+![i4.png](images/i4.png)
 
 *Twisting it to make it vertical because that’s the standard representation.*
 
-![i5.png](attachment:i5.png)
+![i5.png](images/i5.png)
 
 *Adding a line, which represents a temporal loop. This is an old-school representation of RNNs and basically means that this hidden layer not only gives an output but also feeds back into itself.*
 
-![i6.png](attachment:i6.png)
+![i6.png](images/i6.png)
 
 *Unrolling the temporal loop and representing RNNs in a new way. Now each circle represents not only one neuron, but a whole layer of neurons.*
 
-![i7.png](attachment:i7.png)
+![i7.png](images/i7.png)
 
 *So, we’ve got inputs, hidden layer and outputs as usually but now the neurons are also connected to themselves through time.\
 The idea behind RNNs is that the neurons have some sort of short-term memory providing them with the possibility to remember, what was in this neuron just previously. Thus, the neurons can pass information on to themselves in the future and analyze things*
@@ -70,20 +70,20 @@ The idea behind RNNs is that the neurons have some sort of short-term memory pro
 ## Representation of RNN
 **Representation techniques**-*The two main ways of representing words are summed up in the table below:*
 
-![r1.PNG](attachment:r1.PNG)
+![r1.PNG](images/r1.PNG)
 
 *Embedding matrixFor a given word ww, the embedding matrix EE is a matrix that maps its 1-hot representation o_w to its embedding e_w as follows:\
 e_w=Eo_w*
 
 ## Example of RNN
 
-![a1.PNG](attachment:a1.PNG)
+![a1.PNG](images/a1.PNG)
 
 **One to many**\
 *This is a network with one input and multiple outputs.\
 For instance, it could be an image (input), which is described by a computer with words (outputs). You can see such example in the image below.*
 
-![a2.png](attachment:a2.png)
+![a2.png](images/a2.png)
 
 *This picture of the dog first went through CNN and then was fed into RNN. The network describes the given picture as “black and white dog jumps over bar”. This is pretty accurate, isn’t it?\
 While CNN is responsible here for image processing and feature recognition, our RNN allows the computer to make sense out of the sentence. As you can see, the sentence actually flows quite well.*
@@ -92,15 +92,15 @@ While CNN is responsible here for image processing and feature recognition, our 
 
 *An example of this relationship would be sentiment analysis, when you have lots of text, such as a customer’s comment, for example, and you need to gauge what’s the chance that this comment is positive, or how positive this comment actually is, or how negative it is.*
 
-![a3.png](attachment:a3.png)
+![a3.png](images/a3.png)
 
 **Many to many**
-![a4.png](attachment:a4.png)
+![a4.png](images/a4.png)
 
 *Translations can be a good example of many to many type of network. Let’s have a look at a particular instance from Google Translator. We don’t know if Google Translator uses RNNs or not, but the concept remains the same.\
 As you can see in the picture below, we’re translating one sentence from English to Czech. In some other languages, including Czech, it is important for the verb phrase, what gender your person is.*
 
-![a5.png](attachment:a5.png)
+![a5.png](images/a5.png)
 
 *So, when we have “a boy” in the input sentence, the translation of the “who likes” part looks like “který rád”. But as we change a person to “a girl”, this part changes to “která ráda”, reflecting the change of the subject.\
 The concept is the following: you need the short-term information about the previous word to translate the next word.\
