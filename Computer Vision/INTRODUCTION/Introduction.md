@@ -134,7 +134,7 @@ Note that the cell we're talking about here is a cell on the prediction feature 
 
 The function is a composition of multiple SSEs. During training, this loss function is optimized to improve the predictions of the network. SSE has a benefit over other loss functions as it is easier to use and optimize. It is noteworthy that usually loss functions are chosen or designed keeping the ease of optimization in mind. For example, a cross entropy loss function is a negative logarithmic function which is smooth and convex. Both these properties make it easier and quicker to optimize hence, improving training time and results. Following is the formula for the SSE function used by YOLO:
 
-![11.bmp](attachment:11.bmp)
+![11.bmp](images/11.bmp)
 
 ### Advantages and Disadvantages
 
