@@ -8,7 +8,7 @@ Object detection is a computer vision technique that allows us to identify and l
 
 The simplest deep learning approach, and a widely used one, for detecting objects in images – Convolutional Neural Networks or CNNs. If your understanding of CNNs is a little rusty, summarize the inner workings of a CNN for you. Take a look at the below summarize the working of CNN.
 
-![1.png](attachment:1.png)
+![1.png](images/:1.png)
 
 We pass an image to the network, and it is then sent through various convolutions and pooling layers. Finally, we get the output in the form of the object’s class.For each input image, we get a corresponding class as an output.
 
