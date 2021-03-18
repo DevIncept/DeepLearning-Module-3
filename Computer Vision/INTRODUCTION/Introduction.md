@@ -19,7 +19,7 @@ RCNN uses selective search to extract these boxes from an image (these boxes are
 
 ### Network Design
 
-![2.bmp](attachment:2.bmp)
+![2.bmp](images/2.bmp)
 
 #### Selective Search:
 
@@ -43,11 +43,11 @@ How R-CNN works can be summarized as follows:
 
 #### Bounding Box Regression
 
-![5.bmp](attachment:5.bmp)
+![5.bmp](images/5.bmp)
 
-![3.bmp](attachment:3.bmp)
+![3.bmp](images/3.bmp)
 
-![4.bmp](attachment:4.bmp)
+![4.bmp](images/4.bmp)
 
 ### Advantages and DisAdvantages
 
@@ -64,7 +64,7 @@ The reason “Fast R-CNN” is faster than R-CNN is because you don’t have to 
 
 ### Network Design
 
-![6.bmp](attachment:6.bmp)
+![6.bmp](images/6.bmp)
 
 ###  Workflow
 
@@ -79,15 +79,15 @@ How Fast R-CNN works is summarized as follows; many steps are same as in R-CNN:
    * A softmax estimator of K + 1 classes (same as in R-CNN, +1 is the “background” class), outputting a discrete probability distribution per RoI.
    * A bounding-box regression model which predicts offsets relative to the original RoI for each of K classes.
 
-![7.bmp](attachment:7.bmp)
+![7.bmp](images/7.bmp)
 
-![8.bmp](attachment:8.bmp)
+![8.bmp](images/8.bmp)
 
 The image is provided as an input to a convolutional network which provides a convolutional feature map. Instead of using selective search algorithm on the feature map to identify the region proposals, a separate network is used to predict the region proposals. The predicted region proposals are then reshaped using a RoI pooling layer which is then used to classify the image within the proposed region and predict the offset values for the bounding boxes.
 
 ## Loss Function
 
-![9.bmp](attachment:9.bmp)
+![9.bmp](images/9.bmp)
 
 ### Advantages and DisAdvantages
 
@@ -106,7 +106,7 @@ All of the previous object detection algorithms use regions to localize the obje
 ### Network Design
 
 
-![10.bmp](attachment:10.bmp)
+![10.bmp](images/10.bmp)
 
 How YOLO works is that we take an image and split it into an SxS grid, within each of the grid we take m bounding boxes. For each of the bounding box, the network outputs a class probability and offset values for the bounding box. The bounding boxes having the class probability above a threshold value is selected and used to locate the object within the image.
 
@@ -116,11 +116,11 @@ YOLO is orders of magnitude faster(45 frames per second) than other object detec
 
 The whole system can be divided into two major components: Feature Extractor and Detector; both are multi-scale. When a new image comes in, it goes through the feature extractor first so that we can obtain feature embeddings at three (or more) different scales. Then, these features are feed into three (or more) branches of the detector to get bounding boxes and class information.
 
-![12.bmp](attachment:12.bmp)
+![12.bmp](images/12.bmp)
 
 Let us consider an example below, where the input image is 416 x 416, and stride of the network is 32. As pointed earlier, the dimensions of the feature map will be 13 x 13. We then divide the input image into 13 x 13 cells.
 
-![13.bmp](attachment:13.bmp)
+![13.bmp](images/13.bmp)
 
 Then, the cell (on the input image) containing the center of the ground truth box of an object is chosen to be the one responsible for predicting the object. In the image, it is the cell which marked red, which contains the center of the ground truth box (marked yellow).
 
