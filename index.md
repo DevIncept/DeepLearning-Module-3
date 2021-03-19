@@ -12,7 +12,7 @@
 
     -  [Part 2(a):  Sequence to Sequence architecture for machine translation](Attention-Mechanisms/Sequence-to-Sequence-architecture-for-machine-translation.md)
 
-    -  [Part 2(b): Understanding Attention Mechanism ](Devincept_Jai_Kushwaha_Contribution/Attention-Mechanism-What-and-Why-main/Attention-Mechanism-What-and-Why.md)
+    -  [Part 2(b): Understanding Attention Mechanism ](Attention-Mechanisms/Devincept_Jai_Kushwaha_Contribution/Attention-Mechanism-What-and-Why-main/Attention-Mechanism-What-and-Why.md)
 
     -  [Part 2(c): Attention Mechanism in RNN](Attention-Mechanisms/Sonakshi_Attention_Mechanism.md)
   
