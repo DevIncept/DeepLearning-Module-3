@@ -1,7 +1,0 @@
-jsonschema
-keras
-keras-resnet
-numpydoc
-scikit-image
-sphinx-gallery
-tensorflow
