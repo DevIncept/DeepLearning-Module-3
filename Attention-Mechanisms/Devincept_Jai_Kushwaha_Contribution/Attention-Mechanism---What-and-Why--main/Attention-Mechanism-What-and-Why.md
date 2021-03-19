@@ -1,3 +1,28 @@
+# What is Attention Mechanism?
+
+While reading/listening about a certain topic, it is possible for our brain to recognise one part of the context better than the other. 
+In the same way, an Attention Mechanism model would provide a somewhat higher weight to one part than the other, simply meaning that its attention is 
+focused in that area.
+
+I’ll try to make this clearer with the help of an example. Say, you have to prepare for an open book examination. For this purpose, 10 mins before the exam, 
+you are provided a single sheet of a document containing a brief description about Arrays. You as a newbie, go through the document, understanding some parts 
+and missing out on some. The exam commences and it consists of a single question ‘What are Arrays’. You quickly go back to the document in your hand and try to 
+find the definition of Arrays. Your ATTENTION is focused on searching for an answer to the question at hand. Being the smart person you are, you answer the 
+question and receive a full grade. 
+
+An Attention mechanism model takes in the input from one end, the question from the other end, and only focuses on the parts in the input that might help 
+in answering the question. 
+
+We can also describe Attention Mechanism as a method in Deep learning which is used to represent what part of input data some layer should focus or a mechanism 
+used to create a corresponding output for this kind of focused input data. 
+
+
+## Why Attention Mechanism?
+Why are we using Attention Mechanism in Deep learning or NLP? Simply because when implemented, the result obtained is better. Attention Mechanism models were able
+to give a substantially better result when applied to text translation, image captioning , etc. 
+
+Let us understand the purpose of this model in RNN
+
 
 <h1 align="center">How the term of Attention Mechanism was introduced and What and Why of Attention Mechanism </h1>
 
